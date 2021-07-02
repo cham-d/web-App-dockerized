@@ -1,0 +1,37 @@
+
+ .button-edit
+{
+
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 100px;
+            background: #4f6280;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+
+
+}
+
+ .button-delete
+{
+              text-decoration: none;
+               color: white;
+               display: inline-block;
+                width: 100px;
+                background: #a31202;
+                padding: 10px;
+                text-align: center;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+
+ }
+.wrapper{
+    padding-top: 2%;
+
+    text-align: center;
+}

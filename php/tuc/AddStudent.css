@@ -1,0 +1,66 @@
+
+
+.submission-form {
+    width: 30%;
+    margin: 1% auto;
+    padding: 0.2% 2% 1% ;
+    border: 2px solid #8a5755;
+    border-radius: 5px;
+    }
+
+label {
+    display: block;
+padding-left: 1%;
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid #2980B9;
+   padding: 2%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.results{
+    padding-top: 2%;
+    margin:auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+#sendBtn{
+
+    border:0;
+    background:#592e35;
+    padding:.5rem;
+    color:white;
+    margin-top: 5%;
+    width:100%;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:.3s background ease;
+
+}
+
+#title {
+    border-bottom: 1px solid #592e35;
+    color: #343050;
+    font-size: 37px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+
+}
+#subtitle {
+    color: #343050;
+    font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 8%;
+}

@@ -1,0 +1,41 @@
+version: '3.3'
+services:
+  db:
+    container_name: mysql8
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'myDB'
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: 'root'
+    volumes:
+      - ./volumesimple:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql #Gia thn prwth fora pou tha treksei,gia thn arxikopoihsh th bashs.
+    ports:
+      - 8082:3306
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_container
+    depends_on:
+      - db
+    environment:
+      - PMA_HOST=db 
+      - PMA_USER=root
+      - PMA_PORT=3306
+      - PMA_PASSWORD=123456
+    ports:
+      - 9090:80
+    restart: always
+  web:   
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: php7_4
+    restart: always
+    volumes:
+      - ./php:/var/www/html/
+    ports:
+      - 8000:80
+volumes:
+  volumesimple:   
