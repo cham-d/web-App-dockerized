@@ -8,10 +8,16 @@ Containers were used for:
 - MySQL (mysql:8.0)
 - pgAdmin(phpmyadmin/phpmyadmin)
 
+PROJECT DESCRIPTION
+------------
+For the purposes of this courses we were asked to create a student managment platform with a simple frontend view and specific backend: We had to use Mysql db, apache server,pgAdmin and containerize the app with Docker. 
+Functionality is divided into two services, first service hosts the apache to serve http requests and the second hosts the mysql db.
+More details in the yaml file.
   
 INSTALLATION
 ------------
-1. Compose yml and go to  http://localhost:8000/tuc/
+1. Build and start the services with docker-compose up command
+2. Go to  http://localhost:8000/tuc/
 
 
 EXTRA INFOS
