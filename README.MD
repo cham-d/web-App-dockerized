@@ -16,7 +16,7 @@ INSTALLATION
 
 EXTRA INFOS
 ------------
-	In the YML file, the command DEPENDS_ON is used in order to
+In the YML file, the command DEPENDS_ON is used in order to
 define which container will start first. (Database starts first,second Apache server and
 finally pgAdmin). It is noted that in order to SQL8 to work i used the command:
 Command: - Default-authentication-plugin = mysql_native_password
