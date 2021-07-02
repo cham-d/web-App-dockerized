@@ -53,7 +53,7 @@ short wait problem can be solved using a script
 (wait-for-it.sh)
 In case of inability to use the attached db, the
 code to create 2 tables and import some
-data is : 
+data is :   
 ```CREATE TABLE `Teachers` (`ID` varchar(10) DEFAULT NULL,`NAME` varchar(10) DEFAULT NULL,`SURNAME` varchar(10) DEFAULT
 NULL,`USERNAME` varchar(10) DEFAULT NULL,`PASSWORD` varchar(10) DEFAULT NULL,`EMAIL` varchar(10) DEFAULT NULL)
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
